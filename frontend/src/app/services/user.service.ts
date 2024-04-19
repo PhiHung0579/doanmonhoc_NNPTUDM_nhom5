@@ -31,4 +31,9 @@ export class UserService {
     })
   }
 
+checkToken(){
+  return this.htppClient.get(this.url+"/user/checkToken");
+  
+}
+
 }
